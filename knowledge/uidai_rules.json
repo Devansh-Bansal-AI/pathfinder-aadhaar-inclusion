@@ -1,0 +1,216 @@
+[
+  {
+    "id": "RULE_001",
+    "title": "Introducer Based Enrollment",
+    "description": "A recognized introducer can support Aadhaar enrollment where standard identity or address documents are not available.",
+    "source": "UIDAI Circular",
+    "circular_reference": "UIDAI Circular XXXXX",
+    "states": ["Delhi", "Haryana", "Uttarakhand", "Uttar Pradesh"],
+    "confidence": 0.93,
+    "edges": [
+      {
+        "from": "Introducer",
+        "to": "Aadhaar",
+        "legal_basis": "Introducer certification for residents without standard documents",
+        "confidence": 0.93,
+        "success_rate": 0.84,
+        "estimated_days": 5,
+        "regional_notes": "Works best when the introducer is attached to an active enrollment centre."
+      }
+    ]
+  },
+  {
+    "id": "RULE_002",
+    "title": "ASHA Community Verification",
+    "description": "ASHA worker knowledge can establish community identity and link the person to an introducer route.",
+    "source": "UIDAI Inclusion Practice Note",
+    "circular_reference": "UIDAI Circular ASHA-REF-002",
+    "states": ["Delhi", "Bihar", "Jharkhand", "Rajasthan", "Uttar Pradesh"],
+    "confidence": 0.9,
+    "edges": [
+      {
+        "from": "ASHA",
+        "to": "Community Affidavit",
+        "legal_basis": "Community health worker verification of residence and identity",
+        "confidence": 0.9,
+        "success_rate": 0.79,
+        "estimated_days": 2,
+        "regional_notes": "Attach ASHA ID and local health register references where available."
+      },
+      {
+        "from": "Community Affidavit",
+        "to": "Introducer",
+        "legal_basis": "Affidavit supports referral to designated introducer",
+        "confidence": 0.86,
+        "success_rate": 0.74,
+        "estimated_days": 3,
+        "regional_notes": "Prefer notarized affidavit in urban districts."
+      }
+    ]
+  },
+  {
+    "id": "RULE_003",
+    "title": "School Record as Identity Support",
+    "description": "A government school record or teacher verification letter can support identity for children and young adults.",
+    "source": "UIDAI Enrollment Document Guidance",
+    "circular_reference": "UIDAI Circular SCHOOL-003",
+    "states": ["Delhi", "Haryana", "Punjab", "Uttarakhand", "Maharashtra"],
+    "confidence": 0.88,
+    "edges": [
+      {
+        "from": "School",
+        "to": "School Record",
+        "legal_basis": "School-issued record confirms name, approximate age and guardian details",
+        "confidence": 0.88,
+        "success_rate": 0.81,
+        "estimated_days": 2,
+        "regional_notes": "Headmaster signature improves acceptance."
+      },
+      {
+        "from": "School Record",
+        "to": "Identity Proof",
+        "legal_basis": "Institutional identity record accepted as supporting identity evidence",
+        "confidence": 0.86,
+        "success_rate": 0.78,
+        "estimated_days": 1,
+        "regional_notes": "Carry the original school register extract if possible."
+      }
+    ]
+  },
+  {
+    "id": "RULE_004",
+    "title": "Employer Verification for Migrant Workers",
+    "description": "Employer verification can support current residence and identity for migrant workers.",
+    "source": "UIDAI Enrollment Facilitation Note",
+    "circular_reference": "UIDAI Circular EMP-004",
+    "states": ["Delhi", "Gujarat", "Maharashtra", "Karnataka", "Telangana"],
+    "confidence": 0.82,
+    "edges": [
+      {
+        "from": "Employer",
+        "to": "Employer Certificate",
+        "legal_basis": "Employer confirms workplace, period of engagement and current location",
+        "confidence": 0.82,
+        "success_rate": 0.68,
+        "estimated_days": 2,
+        "regional_notes": "Add GST/license number if the employer has one."
+      },
+      {
+        "from": "Employer Certificate",
+        "to": "Address Proof",
+        "legal_basis": "Workplace-linked certification supports local address pathway",
+        "confidence": 0.77,
+        "success_rate": 0.62,
+        "estimated_days": 2,
+        "regional_notes": "May need additional neighbour statement in informal settlements."
+      }
+    ]
+  },
+  {
+    "id": "RULE_005",
+    "title": "Head of Family Enrollment",
+    "description": "A family member with Aadhaar can support enrollment through Head of Family linkage.",
+    "source": "UIDAI HoF Procedure",
+    "circular_reference": "UIDAI Circular HOF-005",
+    "states": ["All India"],
+    "confidence": 0.91,
+    "edges": [
+      {
+        "from": "Head of Family",
+        "to": "Aadhaar",
+        "legal_basis": "Head of Family confirms relationship for Aadhaar enrollment",
+        "confidence": 0.91,
+        "success_rate": 0.86,
+        "estimated_days": 4,
+        "regional_notes": "Carry family member Aadhaar and relationship statement."
+      }
+    ]
+  },
+  {
+    "id": "RULE_006",
+    "title": "Neighbour Residence Affidavit",
+    "description": "A known neighbour can support local residence through a community affidavit.",
+    "source": "Local Enrollment Facilitation Practice",
+    "circular_reference": "UIDAI Circular LOCAL-006",
+    "states": ["Delhi", "Haryana", "Rajasthan", "Uttar Pradesh"],
+    "confidence": 0.78,
+    "edges": [
+      {
+        "from": "Neighbour",
+        "to": "Community Affidavit",
+        "legal_basis": "Neighbour testimony establishes physical residence",
+        "confidence": 0.78,
+        "success_rate": 0.63,
+        "estimated_days": 2,
+        "regional_notes": "Use two neighbour witnesses for higher confidence."
+      },
+      {
+        "from": "Community Affidavit",
+        "to": "Address Proof",
+        "legal_basis": "Affidavit can supplement missing address documents",
+        "confidence": 0.75,
+        "success_rate": 0.6,
+        "estimated_days": 2,
+        "regional_notes": "Attach ration shop or shelter certificate when available."
+      }
+    ]
+  },
+  {
+    "id": "RULE_007",
+    "title": "Gazetted Officer Certificate",
+    "description": "Certification by a gazetted officer can create a stronger fallback route when community documents are weak.",
+    "source": "UIDAI Certificate Format Guidance",
+    "circular_reference": "UIDAI Circular GO-007",
+    "states": ["All India"],
+    "confidence": 0.87,
+    "edges": [
+      {
+        "from": "Gazetted Officer",
+        "to": "Identity Proof",
+        "legal_basis": "Officer-certified identity certificate",
+        "confidence": 0.87,
+        "success_rate": 0.77,
+        "estimated_days": 5,
+        "regional_notes": "Useful escalation path for homeless and stateless residents."
+      },
+      {
+        "from": "Gazetted Officer",
+        "to": "Address Proof",
+        "legal_basis": "Officer-certified residence certificate",
+        "confidence": 0.84,
+        "success_rate": 0.72,
+        "estimated_days": 5,
+        "regional_notes": "Block or tehsil office seal should be visible."
+      }
+    ]
+  },
+  {
+    "id": "RULE_008",
+    "title": "Document to Aadhaar Bridge",
+    "description": "Identity and address proof together form the standard enrollment path.",
+    "source": "UIDAI Standard Enrollment Rules",
+    "circular_reference": "UIDAI Circular STD-008",
+    "states": ["All India"],
+    "confidence": 0.95,
+    "edges": [
+      {
+        "from": "Identity Proof",
+        "to": "Aadhaar",
+        "legal_basis": "Accepted proof of identity for Aadhaar enrollment",
+        "confidence": 0.95,
+        "success_rate": 0.91,
+        "estimated_days": 3,
+        "regional_notes": "Pair with address proof at the enrollment centre."
+      },
+      {
+        "from": "Address Proof",
+        "to": "Aadhaar",
+        "legal_basis": "Accepted proof of address for Aadhaar enrollment",
+        "confidence": 0.94,
+        "success_rate": 0.9,
+        "estimated_days": 3,
+        "regional_notes": "Ensure address matches current district."
+      }
+    ]
+  }
+]
