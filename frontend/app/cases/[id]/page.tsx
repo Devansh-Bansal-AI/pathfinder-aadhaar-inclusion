@@ -70,7 +70,7 @@ export default function CasePage() {
           </div>
           <div className="grid grid-cols-2 gap-3 text-sm">
             <Info label="case_id" value={caseRecord.case_id} />
-            <Info label="outcome" value={caseRecord.outcome} />
+            <Info label="outcome" value={t(caseRecord.outcome)} />
             <Info label="problem_label" value={t(caseRecord.problem)} />
             <Info label="timeline" value={`${path.estimated_days} ${t("days")}`} />
           </div>
@@ -101,7 +101,7 @@ export default function CasePage() {
           <div className="mt-4 grid gap-3">
             {path.legal_reasoning.map((reason) => (
               <div key={reason} className="rounded-2xl border border-white/30 dark:border-white/10 bg-white/20 dark:bg-black/10 backdrop-blur-sm p-4 text-sm leading-relaxed shadow-sm">
-                {reason}
+                {t(reason)}
               </div>
             ))}
           </div>
@@ -111,7 +111,7 @@ export default function CasePage() {
           <div className="mt-4 grid gap-3">
             {path.regional_notes.map((note) => (
               <div key={note} className="rounded-2xl border border-white/30 dark:border-white/10 bg-white/20 dark:bg-black/10 backdrop-blur-sm p-4 text-sm leading-relaxed shadow-sm">
-                {note}
+                {t(note)}
               </div>
             ))}
           </div>
@@ -127,7 +127,7 @@ export default function CasePage() {
           <div className="grid gap-2">
             {path.risk_indicators.map((risk) => (
               <div key={risk} className="rounded-2xl border border-white/30 dark:border-white/10 bg-white/20 dark:bg-black/10 backdrop-blur-sm p-4 text-sm shadow-sm">
-                {risk}
+                {t(risk)}
               </div>
             ))}
           </div>

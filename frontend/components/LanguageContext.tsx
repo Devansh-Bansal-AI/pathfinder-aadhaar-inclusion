@@ -126,21 +126,80 @@ const translations: Record<Language, Record<string, string>> = {
     "Prefer not to say": "Prefer not to say",
 
     // Nodes (dynamic mapping support)
-    "ASHA Verification": "ASHA Verification",
-    "Anganwadi Certificate": "Anganwadi Certificate",
-    "Introducer Consent": "Introducer Consent",
-    "Resident Certificate": "Resident Certificate",
-    "SDM Verification": "SDM Verification",
-    "UIDAI Center Enrollment": "UIDAI Center Enrollment",
-    "Anganwadi Verification": "Anganwadi Verification",
-    "Identity Declaration": "Identity Declaration",
-    "Address Declaration": "Address Declaration",
-    "Officer-Facing Cover Letter": "Officer-Facing Cover Letter",
-    "Self Declaration Affidavit": "Self Declaration Affidavit",
-    "Head of Family Declaration": "Head of Family Declaration",
-    "Address Verification": "Address Verification",
-    "Identity Verification": "Identity Verification",
-    "Aadhaar Enrolment/Update Form": "Aadhaar Enrolment/Update Form",
+    "Person": "Person",
+    "ASHA": "ASHA",
+    "School": "School",
+    "Employer": "Employer",
+    "Neighbour": "Neighbour",
+    "Head of Family": "Head of Family",
+    "Gazetted Officer": "Gazetted Officer",
+    "Community Affidavit": "Community Affidavit",
+    "Employer Certificate": "Employer Certificate",
+    "School Record": "School Record",
+    "Identity Proof": "Identity Proof",
+    "Address Proof": "Address Proof",
+    "Aadhaar": "Aadhaar",
+    "Introducer": "Introducer",
+
+    // Document Names
+    "Cover Letter to Enrollment Officer": "Cover Letter to Enrollment Officer",
+    "Introducer Declaration": "Introducer Declaration",
+    "Employer Verification Letter": "Employer Verification Letter",
+    "School Verification Letter": "School Verification Letter",
+    "Biometric Exception Note": "Biometric Exception Note",
+
+    // Rule Titles
+    "Introducer Based Enrollment": "Introducer Based Enrollment",
+    "ASHA Community Verification": "ASHA Community Verification",
+    "School Record as Identity Support": "School Record as Identity Support",
+    "Employer Verification for Migrant Workers": "Employer Verification for Migrant Workers",
+    "Head of Family Enrollment": "Head of Family Enrollment",
+    "Neighbour Residence Affidavit": "Neighbour Residence Affidavit",
+    "Gazetted Officer Certificate": "Gazetted Officer Certificate",
+    "Document to Aadhaar Bridge": "Document to Aadhaar Bridge",
+
+    // Legal Explanations
+    "Introducer -> Aadhaar: Introducer certification for residents without standard documents (UIDAI Circular XXXXX).": "Introducer -> Aadhaar: Introducer certification for residents without standard documents (UIDAI Circular XXXXX).",
+    "ASHA -> Community Affidavit: Community health worker verification of residence and identity (UIDAI Circular ASHA-REF-02).": "ASHA -> Community Affidavit: Community health worker verification of residence and identity (UIDAI Circular ASHA-REF-02).",
+    "Community Affidavit -> Introducer: Affidavit supports referral to designated introducer (UIDAI Circular ASHA-REF-02).": "Community Affidavit -> Introducer: Affidavit supports referral to designated introducer (UIDAI Circular ASHA-REF-02).",
+    "School -> School Record: School-issued record confirms name, approximate age and guardian details (UIDAI Circular SCHOOL-003).": "School -> School Record: School-issued record confirms name, approximate age and guardian details (UIDAI Circular SCHOOL-003).",
+    "School Record -> Identity Proof: Institutional identity record accepted as supporting identity evidence (UIDAI Circular SCHOOL-003).": "School Record -> Identity Proof: Institutional identity record accepted as supporting identity evidence (UIDAI Circular SCHOOL-003).",
+    "Employer -> Employer Certificate: Employer confirms workplace, period of engagement and current location (UIDAI Circular EMP-004).": "Employer -> Employer Certificate: Employer confirms workplace, period of engagement and current location (UIDAI Circular EMP-004).",
+    "Employer Certificate -> Address Proof: Workplace-linked certification supports local address pathway (UIDAI Circular EMP-004).": "Employer Certificate -> Address Proof: Workplace-linked certification supports local address pathway (UIDAI Circular EMP-004).",
+    "Head of Family -> Aadhaar: Head of Family confirms relationship for Aadhaar enrollment (UIDAI Circular HOF-005).": "Head of Family -> Aadhaar: Head of Family confirms relationship for Aadhaar enrollment (UIDAI Circular HOF-005).",
+    "Neighbour -> Community Affidavit: Neighbour testimony establishes physical residence (UIDAI Circular LOCAL-006).": "Neighbour -> Community Affidavit: Neighbour testimony establishes physical residence (UIDAI Circular LOCAL-006).",
+    "Community Affidavit -> Address Proof: Affidavit can supplement missing address documents (UIDAI Circular LOCAL-006).": "Community Affidavit -> Address Proof: Affidavit can supplement missing address documents (UIDAI Circular LOCAL-006).",
+    "Gazetted Officer -> Identity Proof: Officer-certified identity certificate (UIDAI Circular GO-007).": "Gazetted Officer -> Identity Proof: Officer-certified identity certificate (UIDAI Circular GO-007).",
+    "Gazetted Officer -> Address Proof: Officer-certified residence certificate (UIDAI Circular GO-007).": "Gazetted Officer -> Address Proof: Officer-certified residence certificate (UIDAI Circular GO-007).",
+    "Identity Proof -> Aadhaar: Accepted proof of identity for Aadhaar enrollment (UIDAI Circular STD-008).": "Identity Proof -> Aadhaar: Accepted proof of identity for Aadhaar enrollment (UIDAI Circular STD-008).",
+    "Address Proof -> Aadhaar: Accepted proof of address for Aadhaar enrollment (UIDAI Circular STD-008).": "Address Proof -> Aadhaar: Accepted proof of address for Aadhaar enrollment (UIDAI Circular STD-008).",
+
+    // Regional Notes
+    "Works best when the introducer is attached to an active enrollment centre.": "Works best when the introducer is attached to an active enrollment centre.",
+    "Attach ASHA ID and local health register references where available.": "Attach ASHA ID and local health register references where available.",
+    "Prefer notarized affidavit in urban districts.": "Prefer notarized affidavit in urban districts.",
+    "Headmaster signature improves acceptance.": "Headmaster signature improves acceptance.",
+    "Carry the original school register extract if possible.": "Carry the original school register extract if possible.",
+    "Add GST/license number if the employer has one.": "Add GST/license number if the employer has one.",
+    "May need additional neighbour statement in informal settlements.": "May need additional neighbour statement in informal settlements.",
+    "Carry family member Aadhaar and relationship statement.": "Carry family member Aadhaar and relationship statement.",
+    "Use two neighbour witnesses for higher confidence.": "Use two neighbour witnesses for higher confidence.",
+    "Attach ration shop or shelter certificate when available.": "Attach ration shop or shelter certificate when available.",
+    "Useful escalation path for homeless and stateless residents.": "Useful escalation path for homeless and stateless residents.",
+    "Block or tehsil office seal should be visible.": "Block or tehsil office seal should be visible.",
+    "Pair with address proof at the enrollment centre.": "Pair with address proof at the enrollment centre.",
+    "Ensure address matches current district.": "Ensure address matches current district.",
+
+    // Risk Indicators
+    "No designated introducer has been identified yet.": "No designated introducer has been identified yet.",
+    "Biometric exception may require supervised enrollment and medical note.": "Biometric exception may require supervised enrollment and medical note.",
+    "Displacement history may require extra residence corroboration.": "Displacement history may require extra residence corroboration.",
+    "Current location should be verified by shelter, ASHA or local body.": "Current location should be verified by shelter, ASHA or local body.",
+    "Employer or neighbour evidence should match the current district.": "Employer or neighbour evidence should match the current district.",
+    "Escalate early to a gazetted officer or legal aid clinic.": "Escalate early to a gazetted officer or legal aid clinic.",
+    "Confidence is moderate; collect one additional institutional witness.": "Confidence is moderate; collect one additional institutional witness.",
+    "No documents and no neighbour witness increases rejection risk.": "No documents and no neighbour witness increases rejection risk.",
+    "Low procedural risk if generated documents are signed before submission.": "Low procedural risk if generated documents are signed before submission."
   },
   hi: {
     // Nav
@@ -254,22 +313,81 @@ const translations: Record<Language, Record<string, string>> = {
     "Prefer not to say": "बताना नहीं चाहते",
 
     // Nodes (dynamic mapping support)
-    "ASHA Verification": "आशा सत्यापन",
-    "Anganwadi Certificate": "आंगनवाड़ी प्रमाणपत्र",
-    "Introducer Consent": "परिचयकर्ता की सहमति",
-    "Resident Certificate": "निवासी प्रमाणपत्र",
-    "SDM Verification": "एसडीएम सत्यापन",
-    "UIDAI Center Enrollment": "यूआईडीएआई केंद्र नामांकन",
-    "Anganwadi Verification": "आंगनवाड़ी सत्यापन",
-    "Identity Declaration": "पहचान घोषणा",
-    "Address Declaration": "पता घोषणा",
-    "Officer-Facing Cover Letter": "अधिकारी-समक्ष कवर पत्र",
-    "Self Declaration Affidavit": "स्व-घोषणा हलफनामा",
-    "Head of Family Declaration": "परिवार के मुखिया की घोषणा",
-    "Address Verification": "पता सत्यापन",
-    "Identity Verification": "पहचान सत्यापन",
-    "Aadhaar Enrolment/Update Form": "आधार नामांकन/अद्यतन फॉर्म",
-  },
+    "Person": "व्यक्ति",
+    "ASHA": "आशा कार्यकर्ता",
+    "School": "स्कूल",
+    "Employer": "नियोक्ता",
+    "Neighbour": "पड़ोसी",
+    "Head of Family": "परिवार का मुखिया",
+    "Gazetted Officer": "राजपत्रित अधिकारी",
+    "Community Affidavit": "सामुदायिक हलफनामा",
+    "Employer Certificate": "नियोक्ता प्रमाणपत्र",
+    "School Record": "स्कूल रिकॉर्ड",
+    "Identity Proof": "पहचान का प्रमाण",
+    "Address Proof": "पते का प्रमाण",
+    "Aadhaar": "आधार",
+    "Introducer": "परिचयकर्ता",
+
+    // Document Names
+    "Cover Letter to Enrollment Officer": "नामांकन अधिकारी को कवर पत्र",
+    "Introducer Declaration": "परिचयकर्ता घोषणा",
+    "Employer Verification Letter": "नियोक्ता सत्यापन पत्र",
+    "School Verification Letter": "स्कूल सत्यापन पत्र",
+    "Biometric Exception Note": "बायोमेट्रिक अपवाद नोट",
+
+    // Rule Titles
+    "Introducer Based Enrollment": "परिचयकर्ता आधारित नामांकन",
+    "ASHA Community Verification": "आशा सामुदायिक सत्यापन",
+    "School Record as Identity Support": "पहचान समर्थन के रूप में स्कूल रिकॉर्ड",
+    "Employer Verification for Migrant Workers": "प्रवासी श्रमिकों के लिए नियोक्ता सत्यापन",
+    "Head of Family Enrollment": "परिवार के मुखिया द्वारा नामांकन",
+    "Neighbour Residence Affidavit": "पड़ोसी निवास हलफनामा",
+    "Gazetted Officer Certificate": "राजपत्रित अधिकारी प्रमाणपत्र",
+    "Document to Aadhaar Bridge": "दस्तावेज़ से आधार ब्रिज",
+
+    // Legal Explanations
+    "Introducer -> Aadhaar: Introducer certification for residents without standard documents (UIDAI Circular XXXXX).": "परिचयकर्ता -> आधार: बिना मानक दस्तावेजों वाले निवासियों के लिए परिचयकर्ता प्रमाणन (यूआईडीएआई परिपत्र XXXXX)।",
+    "ASHA -> Community Affidavit: Community health worker verification of residence and identity (UIDAI Circular ASHA-REF-02).": "आशा -> सामुदायिक हलफनामा: निवास और पहचान का सामुदायिक स्वास्थ्य कार्यकर्ता द्वारा सत्यापन (यूआईडीएआई परिपत्र ASHA-REF-02)।",
+    "Community Affidavit -> Introducer: Affidavit supports referral to designated introducer (UIDAI Circular ASHA-REF-02).": "सामुदायिक हलफनामा -> परिचयकर्ता: हलफनामा नामित परिचयकर्ता को रिफर करने का समर्थन करता है (यूआईडीएआई परिपत्र ASHA-REF-02)।",
+    "School -> School Record: School-issued record confirms name, approximate age and guardian details (UIDAI Circular SCHOOL-003).": "स्कूल -> स्कूल रिकॉर्ड: स्कूल द्वारा जारी रिकॉर्ड नाम, अनुमानित आयु और अभिभावक के विवरण की पुष्टि करता है (यूआईडीएआई परिपत्र SCHOOL-003)।",
+    "School Record -> Identity Proof: Institutional identity record accepted as supporting identity evidence (UIDAI Circular SCHOOL-003).": "स्कूल रिकॉर्ड -> पहचान का प्रमाण: संस्थागत पहचान रिकॉर्ड को पहचान साक्ष्य के रूप में स्वीकार किया जाता है (यूआईडीएआई परिपत्र SCHOOL-003)।",
+    "Employer -> Employer Certificate: Employer confirms workplace, period of engagement and current location (UIDAI Circular EMP-004).": "नियोक्ता -> नियोक्ता प्रमाणपत्र: नियोक्ता कार्यस्थल, काम की अवधि और वर्तमान स्थान की पुष्टि करता है (यूआईडीएआई परिपत्र EMP-004)।",
+    "Employer Certificate -> Address Proof: Workplace-linked certification supports local address pathway (UIDAI Circular EMP-004).": "नियोक्ता प्रमाणपत्र -> पते का प्रमाण: कार्यस्थल से जुड़ा प्रमाणन स्थानीय पते के मार्ग का समर्थन करता है (यूआईडीएआई परिपत्र EMP-004)।",
+    "Head of Family -> Aadhaar: Head of Family confirms relationship for Aadhaar enrollment (UIDAI Circular HOF-005).": "परिवार का मुखिया -> आधार: परिवार का मुखिया आधार नामांकन के लिए संबंध की पुष्टि करता है (यूआईडीएआई परिपत्र HOF-005)।",
+    "Neighbour -> Community Affidavit: Neighbour testimony establishes physical residence (UIDAI Circular LOCAL-006).": "पड़ोसी -> सामुदायिक हलफनामा: पड़ोसी की गवाही भौतिक निवास स्थापित करती है (यूआईडीएआई परिपत्र LOCAL-006)।",
+    "Community Affidavit -> Address Proof: Affidavit can supplement missing address documents (UIDAI Circular LOCAL-006).": "सामुदायिक हलफनामा -> पते का प्रमाण: हलफनामा लापता पते के दस्तावेजों की कमी को पूरा कर सकता है (यूआईडीएआई परिपत्र LOCAL-006)।",
+    "Gazetted Officer -> Identity Proof: Officer-certified identity certificate (UIDAI Circular GO-007).": "राजपत्रित अधिकारी -> पहचान का प्रमाण: अधिकारी द्वारा प्रमाणित पहचान पत्र (यूआईडीएआई परिपत्र GO-007)।",
+    "Gazetted Officer -> Address Proof: Officer-certified residence certificate (UIDAI Circular GO-007).": "राजपत्रित अधिकारी -> पते का प्रमाण: अधिकारी द्वारा प्रमाणित निवास प्रमाण पत्र (यूआईडीएआई परिपत्र GO-007)।",
+    "Identity Proof -> Aadhaar: Accepted proof of identity for Aadhaar enrollment (UIDAI Circular STD-008).": "पहचान का प्रमाण -> आधार: आधार नामांकन के लिए पहचान का स्वीकृत प्रमाण (यूआईडीएआई परिपत्र STD-008)।",
+    "Address Proof -> Aadhaar: Accepted proof of address for Aadhaar enrollment (UIDAI Circular STD-008).": "पते का प्रमाण -> आधार: आधार नामांकन के लिए पते का स्वीकृत प्रमाण (यूआईडीएआई परिपत्र STD-008)।",
+
+    // Regional Notes
+    "Works best when the introducer is attached to an active enrollment centre.": "सबसे अच्छा तब काम करता है जब परिचयकर्ता एक सक्रिय नामांकन केंद्र से जुड़ा हो।",
+    "Attach ASHA ID and local health register references where available.": "जहां उपलब्ध हो, वहां आशा आईडी और स्थानीय स्वास्थ्य रजिस्टर संदर्भ संलग्न करें।",
+    "Prefer notarized affidavit in urban districts.": "शहरी जिलों में नोटरीकृत हलफनामे को प्राथमिकता दें।",
+    "Headmaster signature improves acceptance.": "प्रधानाध्यापक के हस्ताक्षर स्वीकृति में सुधार करते हैं।",
+    "Carry the original school register extract if possible.": "यदि संभव हो तो मूल स्कूल रजिस्टर उद्धरण साथ रखें।",
+    "Add GST/license number if the employer has one.": "यदि नियोक्ता के पास जीएसटी/लाइसेंस संख्या हो तो उसे जोड़ें।",
+    "May need additional neighbour statement in informal settlements.": "अनौपचारिक बस्तियों में अतिरिक्त पड़ोसी के बयान की आवश्यकता हो सकती है।",
+    "Carry family member Aadhaar and relationship statement.": "परिवार के सदस्य का आधार और संबंध विवरण साथ रखें।",
+    "Use two neighbour witnesses for higher confidence.": "उच्च विश्वसनीयता के लिए दो पड़ोसी गवाहों का उपयोग करें।",
+    "Attach ration shop or shelter certificate when available.": "उपलब्ध होने पर राशन की दुकान या आश्रय प्रमाणपत्र संलग्न करें।",
+    "Useful escalation path for homeless and stateless residents.": "बेघर और राज्यविहीन निवासियों के लिए उपयोगी समाधान मार्ग।",
+    "Block or tehsil office seal should be visible.": "ब्लॉक या तहसील कार्यालय की सील दिखाई देनी चाहिए।",
+    "Pair with address proof at the enrollment centre.": "नामांकन केंद्र पर पते के प्रमाण के साथ जोड़ें।",
+    "Ensure address matches current district.": "सुनिश्चित करें कि पता वर्तमान जिले से मेल खाता हो।",
+
+    // Risk Indicators
+    "No designated introducer has been identified yet.": "अभी तक कोई नामित परिचयकर्ता नहीं मिला है।",
+    "Biometric exception may require supervised enrollment and medical note.": "बायोमेट्रिक अपवाद के लिए पर्यवेक्षित नामांकन और चिकित्सा नोट की आवश्यकता हो सकती है।",
+    "Displacement history may require extra residence corroboration.": "विस्थापन के इतिहास के लिए अतिरिक्त निवास पुष्टि की आवश्यकता हो सकती है।",
+    "Current location should be verified by shelter, ASHA or local body.": "वर्तमान स्थान को आश्रय गृह, आशा या स्थानीय निकाय द्वारा सत्यापित किया जाना चाहिए।",
+    "Employer or neighbour evidence should match the current district.": "नियोक्ता या पड़ोसी के साक्ष्य वर्तमान जिले से मेल खाने चाहिए।",
+    "Escalate early to a gazetted officer or legal aid clinic.": "जल्द ही राजपत्रित अधिकारी या कानूनी सहायता क्लिनिक से संपर्क करें।",
+    "Confidence is moderate; collect one additional institutional witness.": "विश्वसनीयता मध्यम है; एक अतिरिक्त संस्थागत गवाह एकत्र करें।",
+    "No documents and no neighbour witness increases rejection risk.": "कोई दस्तावेज न होने और कोई पड़ोसी गवाह न होने से अस्वीकृति का जोखिम बढ़ जाता है।",
+    "Low procedural risk if generated documents are signed before submission.": "यदि उत्पन्न दस्तावेजों को जमा करने से पहले हस्ताक्षरित किया जाता है तो प्रक्रियात्मक जोखिम कम होता है।"
+  }
 };
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -289,7 +407,31 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   };
 
   const t = (key: string): string => {
-    return translations[language][key] || key;
+    if (!key) return "";
+
+    const trimmedKey = key.trim();
+
+    // Check if key is a path arrow separated string
+    // e.g. "Neighbour -> Community Affidavit -> Introducer -> Aadhaar"
+    if (trimmedKey.includes(" -> ")) {
+      return trimmedKey
+        .split(" -> ")
+        .map((n) => t(n))
+        .join(" -> ");
+    }
+
+    // Check if key is a state-specific rule warning
+    // e.g. "Introducer Based Enrollment: not state-specific for Jharkhand; verify locally."
+    const stateWarningRegex = /^(.*?): not state-specific for (.*?); verify locally\.$/;
+    const match = trimmedKey.match(stateWarningRegex);
+    if (match) {
+      const [, ruleTitle, stateName] = match;
+      if (language === "hi") {
+        return `${t(ruleTitle)}: ${stateName} के लिए राज्य-विशिष्ट नहीं है; स्थानीय स्तर पर सत्यापन करें।`;
+      }
+    }
+
+    return translations[language][trimmedKey] || trimmedKey;
   };
 
   const requestLanguage = () => {
