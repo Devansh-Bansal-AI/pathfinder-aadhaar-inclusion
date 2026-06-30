@@ -35,7 +35,7 @@ export default function Dashboard() {
 
   return (
     <div className="grid gap-6">
-      <section className="grid gap-4 rounded-lg bg-muted p-5 md:grid-cols-[1fr_auto] md:items-center">
+      <section className="grid gap-4 rounded-lg bg-white/60 backdrop-blur-md dark:bg-black/40 border border-white/40 dark:border-white/10 p-5 md:grid-cols-[1fr_auto] md:items-center">
         <div>
           <div className="text-sm font-medium text-success">Government-tech case navigation</div>
           <h1 className="mt-1 text-3xl font-semibold tracking-normal">AI-powered legal documentation navigator for Aadhaar inclusion</h1>
