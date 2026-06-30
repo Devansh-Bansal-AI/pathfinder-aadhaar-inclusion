@@ -4,14 +4,14 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded-md px-4 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded-full px-5 text-sm font-semibold transition-all duration-300 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-blue-800",
-        secondary: "bg-muted text-foreground hover:bg-slate-200 dark:hover:bg-slate-700",
-        outline: "border border-border bg-background hover:bg-muted",
-        ghost: "hover:bg-muted"
+        default: "bg-gradient-to-b from-primary/90 to-primary text-primary-foreground shadow-sm hover:shadow-md hover:shadow-primary/20 hover:from-primary hover:to-primary/90 hover:-translate-y-0.5",
+        secondary: "bg-white/80 dark:bg-white/10 backdrop-blur-md text-foreground shadow-sm border border-white/20 hover:shadow-md hover:-translate-y-0.5 hover:bg-white/95 dark:hover:bg-white/20",
+        outline: "border border-border bg-white/40 dark:bg-black/40 backdrop-blur-md shadow-sm hover:-translate-y-0.5 hover:shadow-md hover:bg-white/60 dark:hover:bg-black/60",
+        ghost: "hover:bg-black/5 dark:hover:bg-white/10"
       },
       size: {
         default: "h-10 px-4",
